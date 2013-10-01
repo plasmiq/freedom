@@ -21,6 +21,7 @@ menu {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   position: relative;
+  height: 2.6em;
 }
 
 menu h1 {
@@ -50,6 +51,22 @@ menu .right {
   position: absolute;
   top: 0px;
 }
+
+@media only screen and (max-width: 800px) {
+  menu .left {
+    float: left;
+    position: relative;
+  }
+  menu .center {
+    float: left;
+    margin: 0;
+  }
+  menu .right {
+    float: right;
+    position: relative;
+  }
+}
+
 
 menu a, menu a:visited, menu a:hover {
   display: inline-block;
