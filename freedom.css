@@ -51,7 +51,7 @@ menu .right {
   top: 0px;
 }
 
-menu a {
+menu a, menu a:visited, menu a:hover {
   display: inline-block;
   height: 2.6em;
   line-height: 2.6em;
@@ -109,6 +109,15 @@ footer a {
   overflow: hidden;
 }
 
-h2 {
-  font-size: 3em;
+#content p {
+  font-size: 1.6em;
+}
+
+#content h2 {
+  font-size: 3.3em;
+}
+
+#content a, #content a:visited, #content a:hover {
+  text-decoration: none;
+  color: #217473;
 }
