@@ -6,7 +6,7 @@ body {
   background-color: #1F1F1F;
   padding: 0px;
   margin: 0px;
-  font-size: 14px;
+  font-size: 11px;
   font-family: 'Open Sans', sans-serif;
   color: #A9A9A9;
   height: 100%;
@@ -19,8 +19,6 @@ menu {
   font-size: 1.364em;
   color: white;
   font-family: 'Lato', sans-serif;
-  height: 3em;
-  line-height: 2.5em;
   position: relative;
 }
 
@@ -31,7 +29,7 @@ menu h1 {
   float: left;
   font-size: 1em;
   text-transform: uppercase;
-  font-weight: none;
+  font-weight: 900;
 }
 
 menu .left {
@@ -54,14 +52,14 @@ menu .center {
 
 menu a {
   display: inline-block;
-  height: 3em;
-  line-height: 3em;
+  height: 2.6em;
+  line-height: 2.6em;
   padding: 0 10px;
   text-decoration: none;
   color: white;
-  -moz-opacity: 0.30;
-  opacity: 0.30;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=30);
+  -moz-opacity: 0.45;
+  opacity: 0.45;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=45);
   margin: 0 0px;
   font-size: 1em;
   text-transform: uppercase;
@@ -87,9 +85,9 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
-  -moz-opacity: 0.15;
-  opacity: 0.15;
-  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=15);
+  -moz-opacity: 0.23;
+  opacity: 0.23;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=23);
   margin: 0 10px;
 }
 
