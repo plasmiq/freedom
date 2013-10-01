@@ -19,6 +19,7 @@ menu {
   font-size: 1.364em;
   color: white;
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
   position: relative;
 }
 
@@ -29,17 +30,11 @@ menu h1 {
   float: left;
   font-size: 1em;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 menu .left {
   left: 0px;
-  position: absolute;
-  top: 0px;
-}
-
-menu .right {
-  right: 0px;
   position: absolute;
   top: 0px;
 }
@@ -50,11 +45,17 @@ menu .center {
   text-align: center;
 }
 
+menu .right {
+  right: 0px;
+  position: absolute;
+  top: 0px;
+}
+
 menu a {
   display: inline-block;
   height: 2.6em;
   line-height: 2.6em;
-  padding: 0 10px;
+  padding: 0 15px;
   text-decoration: none;
   color: white;
   -moz-opacity: 0.45;
@@ -76,10 +77,16 @@ menu a.active {
 footer {
   background-color: #262626;
   position: relative;
-  height: 3em;
-  line-height: 3em;
-  margin-top: -3em;
+  height: 3.6em;
+  line-height: 3.6em;
+  margin-top: -3.6em;
   font-family: Arial;
+}
+
+footer .right {
+  float: right;
+  margin-left: 0px;
+  margin-right: 15px;
 }
 
 footer a {
@@ -88,19 +95,17 @@ footer a {
   -moz-opacity: 0.23;
   opacity: 0.23;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=23);
-  margin: 0 10px;
+  margin-left: 15px;
 }
 
-footer .right {
-  float: right;
-}
 
 #container {
   min-height: 100%;
 }
 
 #content {
-  margin: 0 10px;
+  margin: 0 auto;
+  width: 939px;
   overflow: hidden;
 }
 
