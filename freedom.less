@@ -5,6 +5,18 @@
   filter: ~"alpha(opacity = (@{opacityPercentage}))";
 }
 
+.box-shadow (@x: 0; @y: 0; @blur: 1px; @spread: 0px; @color: #000) {
+  box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
 html {
   height: 100%;
 }
@@ -141,21 +153,29 @@ body.freedom {
     }
   }
 
-  .big-button {
+  .button () {
     font-weight: 700;
-    font-size: 9.5em;
     background-color: black;
     color: white;
     padding: 0em 1.1em;
     text-transform: uppercase;
     line-height: 2em;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0.045em 0px 0px rgba(25, 25, 25, 1);
-    box-shadow: 0px 0.045em 0px 0px rgba(25, 25, 25, 1);
+  }
+
+  .button {
+    .button();
+    .border-radius(5px);
+    .box-shadow(0px; 0.2em; 0px; 0px; rgba(25, 25, 25, 1));
+  }
+
+  .big-button {
+    .button();
+    .border-radius(5px);
+    .box-shadow(0px; 0.045em; 0px; 0px; rgba(25, 25, 25, 1));
+    font-size: 9.5em;
 
     .icon {
+      .border-radius(1em);
       float: right;
       color: white;
       background-color: white;
@@ -167,10 +187,6 @@ body.freedom {
       display: inline-block;
       margin-top: 0.4em;
       padding: 0.1em;
-
-      -webkit-border-radius: 1em;
-      -moz-border-radius: 1em;
-      border-radius: 1em;
       font-weight: normal;
     }
 

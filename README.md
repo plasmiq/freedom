@@ -10,7 +10,8 @@ Freedom is an universal CSS template to be used in Plasmiq projects.
 
 <br/>
 <div class="big-button color-y">don't do<span class="icon"><i class="icon-remove"></i></span></div>
-
+<br/>
+<span class="button color-z">YES</span> <span class="button color-y">NO</span>
 
 ### Sliders
 
