@@ -4,13 +4,13 @@
     <title>Freedom</title>
     <meta charset="UTF-8"/>
     <link rel="stylesheet/less" type="text/css" href="freedom.less" />
-    <script src="scripts/less-1.5.0.min.js" type="text/javascript"></script>
+    <script src="vendor/javascripts/less-1.5.0.min.js" type="text/javascript"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
   </head>
   <body class="freedom">
-    <section id="container">
+    <div id="container">
       <menu>
         <div class="left">
           <h1><a href="http://freedom.github.com/">freedom</a></h1>
@@ -26,17 +26,20 @@
           <a href="">menu</a>
         </div>
       </menu>
-      <section id="content">
+      <div id="content">
 
-      </section>
-    </section>
+      </div>
+    </div>
+
     <footer>
       <a href="http://plasmiq.com">About</a>
       <a href="http://plasmiq.com">Feedback</a>
       <a class="right" href="http://plasmiq.com">Powered by Plasmiq</a>
     </footer>
-    <script src="scripts/zepto.js"></script>
-    <script src="scripts/showdown.js"></script>
+
+    <script src="freedom.js"></script>
+    <script src="vendor/javascripts/zepto.js"></script>
+    <script src="vendor/javascripts/showdown.js"></script>
     <script>
       $.ajax({
         type: 'GET',
@@ -51,8 +54,6 @@
           $(document).freedom();
         }
       });
-
     </script>
-    <script src="freedom.js"></script>
   </body>
 </html>
