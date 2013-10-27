@@ -17,6 +17,8 @@
   border-radius: @radius;
 }
 
+@color-shadow: rgba(0, 0, 0, 0.3);
+
 html {
   height: 100%;
 }
@@ -153,25 +155,27 @@ body.freedom {
     }
   }
 
-  .button () {
+  .base-button () {
     font-weight: 700;
     background-color: black;
     color: white;
     padding: 0em 1.1em;
     text-transform: uppercase;
     line-height: 2em;
+    cursor: pointer;
   }
 
   .button {
-    .button();
+    .base-button();
     .border-radius(5px);
-    .box-shadow(0px; 0.2em; 0px; 0px; rgba(25, 25, 25, 1));
+    .box-shadow(0px; 0.25em; 0px; 0px; @color-shadow);
+    display: inline-block;
   }
 
   .big-button {
-    .button();
-    .border-radius(5px);
-    .box-shadow(0px; 0.045em; 0px; 0px; rgba(25, 25, 25, 1));
+    .base-button();
+    .border-radius(12px);
+    .box-shadow(0px; 0.08em; 0px; 0px; @color-shadow);
     font-size: 9.5em;
 
     .icon {
