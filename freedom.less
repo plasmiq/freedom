@@ -128,14 +128,14 @@ body.freedom {
     }
   }
 
-  #container {
+  .container {
     min-height: 100%;
+    height: 100%;
   }
 
   #content {
     margin: 0 auto 3.6em auto;
-    max-width: 939px;
-    overflow: hidden;
+    max-width: 960px;
 
     p {
       font-size: 1.6em;
@@ -160,6 +160,9 @@ body.freedom {
     a, a:visited, a:hover {
       text-decoration: none;
       color: #217473;
+      &.button {
+        color: white; // TODO: this should belong to .base-button
+      }
     }
   }
 
