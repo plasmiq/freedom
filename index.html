@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
   </head>
   <body class="freedom language-markup">
-    <div id="container">
+    <div class="wrapper">
       <menu>
         <div class="left">
           <h1><a href="http://freedom.github.com/">freedom</a></h1>
@@ -27,16 +27,16 @@
           <a href="">menu</a>
         </div>
       </menu>
-      <div id="content">
+      <div class="content">
 
       </div>
-    </div>
 
-    <footer>
-      <a href="http://plasmiq.com">About</a>
-      <a href="http://plasmiq.com">Feedback</a>
-      <a class="right" href="http://plasmiq.com">Powered by Plasmiq</a>
-    </footer>
+      <footer>
+        <a href="http://plasmiq.com">About</a>
+        <a href="http://plasmiq.com">Feedback</a>
+        <a class="right" href="http://plasmiq.com">Powered by Plasmiq</a>
+      </footer>
+    </div>
 
     <script src="vendor/javascripts/zepto.js"></script>
     <script src="vendor/javascripts/prism.js" data-manual></script>
@@ -50,8 +50,8 @@
         success: function(data){
           var converter = new Showdown.converter();
           var output = converter.makeHtml(data);
-          var content = document.getElementById("content");
-          content.innerHTML = output;
+          var content = $(".content");
+          content.html(output);
 
 
           Prism.highlightAll()
