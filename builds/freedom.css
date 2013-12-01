@@ -1,27 +1,34 @@
-html {
+html,
+body {
   height: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 body.freedom {
+  color: #A9A9A9;
   background-color: #1F1F1F;
-  padding: 0px;
-  margin: 0px;
   font-size: 11px;
   font-family: 'Open Sans', sans-serif;
-  color: #A9A9A9;
+}
+body.freedom .wrapper {
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  min-height: 100%;
   height: 100%;
 }
-body.freedom menu {
+body.freedom .wrapper menu {
   margin: 0px;
   padding: 0px;
-  background-color: #131313;
-  font-size: 1.364em;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  position: relative;
   height: 2.6em;
+  position: relative;
+  background-color: #131313;
+  color: white;
+  font-size: 1.364em;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
 }
-body.freedom menu h1 {
+body.freedom .wrapper menu h1 {
   margin: 0px 0px;
   padding: 0px;
   float: left;
@@ -29,38 +36,38 @@ body.freedom menu h1 {
   text-transform: uppercase;
   font-weight: 700;
 }
-body.freedom menu .left {
+body.freedom .wrapper menu .left {
   left: 0px;
   position: absolute;
   top: 0px;
 }
-body.freedom menu .center {
+body.freedom .wrapper menu .center {
   margin: 0 auto;
   display: block;
   text-align: center;
 }
-body.freedom menu .right {
+body.freedom .wrapper menu .right {
   right: 0px;
   position: absolute;
   top: 0px;
 }
 @media only screen and (max-width: 800px) {
-  body.freedom menu .left {
+  body.freedom .wrapper menu .left {
     float: left;
     position: relative;
   }
-  body.freedom menu .center {
+  body.freedom .wrapper menu .center {
     float: left;
     margin: 0;
   }
-  body.freedom menu .right {
+  body.freedom .wrapper menu .right {
     float: right;
     position: relative;
   }
 }
-body.freedom menu a,
-body.freedom menu a:visited,
-body.freedom menu a:hover {
+body.freedom .wrapper menu a,
+body.freedom .wrapper menu a:visited,
+body.freedom .wrapper menu a:hover {
   display: inline-block;
   height: 2.6em;
   line-height: 2.6em;
@@ -74,27 +81,29 @@ body.freedom menu a:hover {
   font-size: 1em;
   text-transform: uppercase;
 }
-body.freedom menu a.active {
+body.freedom .wrapper menu a.active {
   background-color: #1F1F1F;
   color: #DC6347;
   opacity: 1;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(100));
   filter: alpha(opacity = (100));
 }
-body.freedom footer {
+body.freedom .wrapper footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
   background-color: #262626;
-  position: relative;
   height: 3.6em;
   line-height: 3.6em;
-  margin-top: -3.6em;
   font-family: Arial;
 }
-body.freedom footer .right {
+body.freedom .wrapper footer .right {
   float: right;
   margin-left: 0px;
   margin-right: 15px;
 }
-body.freedom footer a {
+body.freedom .wrapper footer a {
   text-decoration: none;
   color: white;
   opacity: 0.23;
@@ -102,41 +111,38 @@ body.freedom footer a {
   filter: alpha(opacity = (23));
   margin-left: 15px;
 }
-body.freedom .container {
-  min-height: 100%;
-  height: 100%;
-}
-body.freedom #content {
-  margin: 0 auto 3.6em auto;
+body.freedom .wrapper .content {
+  margin: 0 auto 0 auto;
+  padding: 0px 0px 3.6em;
   max-width: 960px;
 }
-body.freedom #content p {
+body.freedom .wrapper .content p {
   font-size: 1.6em;
 }
-body.freedom #content h2 {
+body.freedom .wrapper .content h2 {
   font-size: 3.3em;
 }
-body.freedom #content h3 {
+body.freedom .wrapper .content h3 {
   font-size: 2.5em;
 }
-body.freedom #content h4 {
+body.freedom .wrapper .content h4 {
   font-size: 2.0em;
 }
-body.freedom #content h5 {
+body.freedom .wrapper .content h5 {
   font-size: 1.5em;
 }
-body.freedom #content a,
-body.freedom #content a:visited,
-body.freedom #content a:hover {
+body.freedom .wrapper .content a,
+body.freedom .wrapper .content a:visited,
+body.freedom .wrapper .content a:hover {
   text-decoration: none;
   color: #217473;
 }
-body.freedom #content a.button,
-body.freedom #content a:visited.button,
-body.freedom #content a:hover.button {
+body.freedom .wrapper .content a.button,
+body.freedom .wrapper .content a:visited.button,
+body.freedom .wrapper .content a:hover.button {
   color: white;
 }
-body.freedom .button {
+body.freedom .wrapper .button {
   font-weight: 700;
   background-color: black;
   color: white;
@@ -152,7 +158,7 @@ body.freedom .button {
   -webkit-box-shadow: 0px 0.25em 0px 0px rgba(0, 0, 0, 0.3);
   display: inline-block;
 }
-body.freedom .big-button {
+body.freedom .wrapper .big-button {
   font-weight: 700;
   background-color: black;
   color: white;
@@ -168,7 +174,7 @@ body.freedom .big-button {
   -webkit-box-shadow: 0px 0.08em 0px 0px rgba(0, 0, 0, 0.3);
   font-size: 9.5em;
 }
-body.freedom .big-button .icon {
+body.freedom .wrapper .big-button .icon {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   border-radius: 1em;
@@ -185,13 +191,13 @@ body.freedom .big-button .icon {
   padding: 0.1em;
   font-weight: normal;
 }
-body.freedom .big-button.color-z .icon {
+body.freedom .wrapper .big-button.color-z .icon {
   color: #007372;
 }
-body.freedom .big-button.color-y .icon {
+body.freedom .wrapper .big-button.color-y .icon {
   color: #CF203F;
 }
-body.freedom .color-z {
+body.freedom .wrapper .color-z {
   background: #1aa7a5;
   /* Old browsers */
   background: -moz-linear-gradient(top, #1aa7a5 0%, #008d8b 100%);
@@ -209,7 +215,7 @@ body.freedom .color-z {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1aa7a5', endColorstr='#008d8b', GradientType=0);
   /* IE6-9 */
 }
-body.freedom .color-y {
+body.freedom .wrapper .color-y {
   background: #FF4464;
   /* Old browsers */
   background: -moz-linear-gradient(top, #ff4464 0%, #e52b4b 100%);
@@ -227,13 +233,13 @@ body.freedom .color-y {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4464', endColorstr='#E52B4B', GradientType=0);
   /* IE6-9 */
 }
-body.freedom .slider {
+body.freedom .wrapper .slider {
   width: 100%;
   font-size: 2em;
   height: 1em;
   border-collapse: collapse;
 }
-body.freedom .slider .hour {
+body.freedom .wrapper .slider .hour {
   width: 24px;
   height: 1em;
   border-left: 1px solid #474747;
