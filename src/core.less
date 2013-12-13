@@ -1,0 +1,156 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body.freedom {
+  color: #A9A9A9;
+  background-color: #1F1F1F;
+  font-size: 11px;
+  font-family: 'Open Sans', sans-serif;
+
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    min-height: 100%;
+    height: 100%;
+
+    menu {
+      margin: 0px;
+      padding: 0px;
+      height: 2.6em;
+      position: relative;
+
+      background-color: #131313;
+      color: white;
+      font-size: 1.364em;
+      font-weight: 400;
+      font-family: 'Lato', sans-serif;
+
+      h1 {
+        float: left;
+        margin: 0px 0px;
+        padding: 0px;
+        float: left;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .left {
+        left: 0px;
+        position: absolute;
+        top: 0px;
+      }
+
+      .center {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+      }
+
+      .right {
+        right: 0px;
+        position: absolute;
+        top: 0px;
+      }
+
+      @media only screen and (max-width: 800px) {
+        .left {
+          float: left;
+          position: relative;
+        }
+        .center {
+          float: left;
+          margin: 0;
+        }
+        .right {
+          float: right;
+          position: relative;
+        }
+      }
+
+      a, a:visited, a:hover {
+        display: inline-block;
+        height: 2.6em;
+        line-height: 2.6em;
+        padding: 0 15px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        .opacity(0.45);
+        margin: 0 0px;
+        font-size: 1em;
+        text-transform: uppercase;
+      }
+
+      a.active {
+        background-color: #1F1F1F;
+        color: #DC6347;
+        .opacity(1.0);
+      }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+
+      background-color: #262626;
+      height: 3.6em;
+      line-height: 3.6em;
+      font-family: Arial;
+
+      .right {
+        float: right;
+        margin-left: 0px;
+        margin-right: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        .opacity(0.23);
+        margin-left: 15px;
+      }
+    }
+
+    .content {
+      margin: 0 auto 0 auto;
+      padding: 0px 0px 3.6em;
+      max-width: 960px;
+
+      p {
+        font-size: 1.6em;
+      }
+
+      h2 {
+        font-size: 3.3em;
+      }
+
+      h3 {
+        font-size: 2.5em;
+      }
+
+      h4 {
+        font-size: 2.0em;
+      }
+
+      h5 {
+        font-size: 1.5em;
+      }
+
+      a, a:visited, a:hover {
+        text-decoration: none;
+        color: #217473;
+        cursor: pointer;
+        &.button {
+          color: white; // TODO: this should belong to .base-button
+        }
+      }
+    }
+  }
+}

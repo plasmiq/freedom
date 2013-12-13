@@ -1,0 +1,47 @@
+.base-button () {
+  font-weight: 700;
+  background-color: black;
+  color: white;
+  padding: 0em 1.1em;
+  text-transform: uppercase;
+  line-height: 2em;
+  cursor: pointer;
+}
+
+.button {
+  .base-button();
+  .border-radius(5px);
+  .box-shadow(0px; 0.25em; 0px; 0px; @color-shadow);
+  display: inline-block;
+}
+
+.big-button {
+  .base-button();
+  .border-radius(12px);
+  .box-shadow(0px; 0.08em; 0px; 0px; @color-shadow);
+  font-size: 9.5em;
+
+  .icon {
+    .border-radius(1em);
+    float: right;
+    color: white;
+    background-color: white;
+    height: 1em;
+    width: 1em;
+    line-height: 1em;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0.4em;
+    padding: 0.1em;
+    font-weight: normal;
+  }
+
+  &.color-z .icon {
+    color: #007372;
+  }
+
+  &.color-y .icon {
+    color: #CF203F;
+  }
+}
