@@ -10,9 +10,10 @@ html.pq-freedom {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    color: #A9A9A9;
+    color: #a9a9a9;
     background-color: #1F1F1F;
-    font-size: 11px;
+    font-size: 18px;
+    line-height: 1.5em;
     font-family: 'Open Sans', sans-serif;
   }
 
@@ -28,12 +29,11 @@ html.pq-freedom {
 .pq-menu {
   margin: 0px;
   padding: 0px;
-  height: 2.6em;
+  font-size: 0.8889em; // 16px / 18px
+  line-height: 3.375em; // 2 * basic line hight of 27px
   position: relative;
-
   background-color: #131313;
   color: white;
-  font-size: 1.364em;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 
@@ -81,16 +81,13 @@ html.pq-freedom {
   }
 
   a, a:visited, a:hover {
+    padding: 0 1.125em;
     display: inline-block;
-    height: 2.6em;
-    line-height: 2.6em;
-    padding: 0 15px;
     text-decoration: none;
     color: white;
     cursor: pointer;
     .opacity(0.45);
     margin: 0 0px;
-    font-size: 1em;
     text-transform: uppercase;
   }
 
@@ -106,24 +103,46 @@ html.pq-freedom {
   padding: 0px 0px 3.6em;
   max-width: 960px;
 
+  div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+  }
+
   p {
-    font-size: 1.6em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  h1 {
+    font-size: 42px;
+    line-height: 1.2857em;
+    font-weight: 600;
+    margin-top: 13.5px;
+    margin-bottom: 13.5px;
   }
 
   h2 {
-    font-size: 3.3em;
+    font-size: 32px;
+    line-height: 1em;
+    font-weight: 600;
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 28px;
+    line-height: 1em;
+    font-weight: 600;
   }
 
   h4 {
-    font-size: 2.0em;
+    font-size: 22px;
+    line-height: 1em;
+    font-weight: 600;
   }
 
   h5 {
-    font-size: 1.5em;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 600;
   }
 
   a, a:visited, a:hover {
@@ -141,22 +160,22 @@ html.pq-freedom {
   bottom: 0px;
   left: 0px;
   width: 100%;
-
   background-color: #262626;
-  height: 3.6em;
-  line-height: 3.6em;
+  font-size: 0.6667em; // 12px / 18px
+  line-height: 4.5em; // 2 * basic line hight of 27px
   font-family: Arial;
 
   .right {
     float: right;
     margin-left: 0px;
-    margin-right: 15px;
+    margin-right: 1.5833em;
   }
 
   a {
     text-decoration: none;
     color: white;
     .opacity(0.23);
-    margin-left: 15px;
+    margin-left: 1.5833em;
+    cursor: pointer;
   }
 }
