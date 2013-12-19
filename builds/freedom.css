@@ -46,9 +46,10 @@ html.pq-freedom body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  color: #A9A9A9;
+  color: #a9a9a9;
   background-color: #1F1F1F;
-  font-size: 11px;
+  font-size: 18px;
+  line-height: 1.5em;
   font-family: 'Open Sans', sans-serif;
 }
 html.pq-freedom body > div {
@@ -61,11 +62,11 @@ html.pq-freedom body > div {
 .pq-menu {
   margin: 0px;
   padding: 0px;
-  height: 2.6em;
+  font-size: 0.8889em;
+  line-height: 3.375em;
   position: relative;
   background-color: #131313;
   color: white;
-  font-size: 1.364em;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
@@ -109,10 +110,8 @@ html.pq-freedom body > div {
 .pq-menu a,
 .pq-menu a:visited,
 .pq-menu a:hover {
+  padding: 0 1.125em;
   display: inline-block;
-  height: 2.6em;
-  line-height: 2.6em;
-  padding: 0 15px;
   text-decoration: none;
   color: white;
   cursor: pointer;
@@ -120,7 +119,6 @@ html.pq-freedom body > div {
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(45));
   filter: alpha(opacity = (45));
   margin: 0 0px;
-  font-size: 1em;
   text-transform: uppercase;
 }
 .pq-menu a.active {
@@ -135,27 +133,80 @@ html.pq-freedom body > div {
   padding: 0px 0px 3.6em;
   max-width: 960px;
 }
+.pq-content div,
+.pq-content dl,
+.pq-content dt,
+.pq-content dd,
+.pq-content ul,
+.pq-content ol,
+.pq-content li,
+.pq-content h1,
+.pq-content h2,
+.pq-content h3,
+.pq-content h4,
+.pq-content h5,
+.pq-content h6,
+.pq-content pre,
+.pq-content form,
+.pq-content fieldset,
+.pq-content p,
+.pq-content blockquote,
+.pq-content th,
+.pq-content td {
+  margin: 0;
+  padding: 0;
+}
 .pq-content p {
-  font-size: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.pq-content h1 {
+  font-weight: 600;
+  font-size: 2.333333333em;
+  line-height: 1.285714286em;
+  margin-top: 0.642857143em;
+  margin-bottom: 0.642857143em;
 }
 .pq-content h2 {
-  font-size: 3.3em;
+  font-weight: 600;
+  font-size: 1.777777778em;
+  line-height: 1.6875em;
+  margin-top: 0.84375em;
+  margin-bottom: 0.84375em;
 }
 .pq-content h3 {
-  font-size: 2.5em;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .pq-content h4 {
-  font-size: 2.0em;
+  font-size: 22px;
+  line-height: 1.227272727em;
+  font-weight: 600;
+  margin-top: 1.227272727em;
+  margin-bottom: 1.227272727em;
 }
 .pq-content h5 {
-  font-size: 1.5em;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.35em;
+  margin-top: 1.35em;
+  margin-bottom: 1.35em;
 }
 .pq-content a,
 .pq-content a:visited,
 .pq-content a:hover {
   text-decoration: none;
-  color: #217473;
+  border-bottom: 1px dotted;
+  color: #3a91a1;
   cursor: pointer;
+}
+.pq-content a:hover,
+.pq-content a:visited:hover,
+.pq-content a:hover:hover {
+  border-bottom: 0;
 }
 .pq-content a.button,
 .pq-content a:visited.button,
@@ -168,14 +219,14 @@ html.pq-freedom body > div {
   left: 0px;
   width: 100%;
   background-color: #262626;
-  height: 3.6em;
-  line-height: 3.6em;
+  font-size: 0.6667em;
+  line-height: 4.5em;
   font-family: Arial;
 }
 .pq-footer .right {
   float: right;
   margin-left: 0px;
-  margin-right: 15px;
+  margin-right: 1.5833em;
 }
 .pq-footer a {
   text-decoration: none;
@@ -183,7 +234,8 @@ html.pq-freedom body > div {
   opacity: 0.23;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(23));
   filter: alpha(opacity = (23));
-  margin-left: 15px;
+  margin-left: 1.5833em;
+  cursor: pointer;
 }
 .pq-button-inline {
   font-weight: 700;
