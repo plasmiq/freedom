@@ -2,9 +2,12 @@
 
 Markup:
 
-    <html>
+    <html class="pq-freedom">
       <head>
       </head>
-      <body class="freedom">
+      <body>
+        <div>
+          YOUR CONTENT GOES HERE
+        </div>
       </body>
     </html>

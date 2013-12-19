@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="pq-freedom">
   <head>
     <title>Freedom</title>
     <meta charset="UTF-8"/>
@@ -7,12 +7,13 @@
     <link rel="stylesheet/less" type="text/css" href="src/freedom.less" />
     <script src="vendor/javascripts/less-1.5.0.min.js" type="text/javascript"></script>
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
   </head>
-  <body class="freedom language-markup">
-    <div class="wrapper">
-      <menu>
+  <body class="language-markup">
+    <div>
+
+      <menu class="pq-menu">
         <div class="left">
           <h1><a href="/">freedom</a></h1>
         </div>
@@ -26,10 +27,10 @@
         </div>
       </menu>
 
-      <div class="content">
+      <div class="pq-content">
       </div>
 
-      <footer>
+      <footer class="pq-footer">
         <a href="http://plasmiq.com">About</a>
         <a href="http://plasmiq.com">Feedback</a>
         <a class="right" href="http://plasmiq.com">Powered by Plasmiq</a>
@@ -57,7 +58,7 @@
         return false;
       }
 
-      $(".content").on("click", "a", localLinkHandler);
+      $(".pq-content").on("click", "a", localLinkHandler);
       $("menu a").on("click", localLinkHandler);
 
       function loadMdDocument(filename) {
@@ -68,7 +69,7 @@
           success: function(data){
             var converter = new Showdown.converter();
             var output = converter.makeHtml(data);
-            var content = $(".content");
+            var content = $(".pq-content");
             content.html(output);
 
 

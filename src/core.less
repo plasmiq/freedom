@@ -1,156 +1,193 @@
-html, body {
+/*
+ * This construction guarantees that stick footer (.pq-footer) will work.
+ */
+html.pq-freedom {
   height: 100%;
   margin: 0px;
   padding: 0px;
-}
 
-body.freedom {
-  color: #A9A9A9;
-  background-color: #1F1F1F;
-  font-size: 11px;
-  font-family: 'Open Sans', sans-serif;
+  body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: #a9a9a9;
+    background-color: #1F1F1F;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+  }
 
-  .wrapper {
+  body > div {
     position: relative;
     width: 100%;
     height: auto !important;
     min-height: 100%;
     height: 100%;
+  }
+}
 
-    menu {
-      margin: 0px;
-      padding: 0px;
-      height: 2.6em;
+.pq-menu {
+  margin: 0px;
+  padding: 0px;
+  font-size: 0.8889em; // 16px / 18px
+  line-height: 3.375em; // 2 * basic line hight of 27px
+  position: relative;
+  background-color: #131313;
+  color: white;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+
+  h1 {
+    float: left;
+    margin: 0px 0px;
+    padding: 0px;
+    float: left;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .left {
+    left: 0px;
+    position: absolute;
+    top: 0px;
+  }
+
+  .center {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .right {
+    right: 0px;
+    position: absolute;
+    top: 0px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .left {
+      float: left;
       position: relative;
-
-      background-color: #131313;
-      color: white;
-      font-size: 1.364em;
-      font-weight: 400;
-      font-family: 'Lato', sans-serif;
-
-      h1 {
-        float: left;
-        margin: 0px 0px;
-        padding: 0px;
-        float: left;
-        font-size: 1em;
-        text-transform: uppercase;
-        font-weight: 700;
-      }
-
-      .left {
-        left: 0px;
-        position: absolute;
-        top: 0px;
-      }
-
-      .center {
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-      }
-
-      .right {
-        right: 0px;
-        position: absolute;
-        top: 0px;
-      }
-
-      @media only screen and (max-width: 800px) {
-        .left {
-          float: left;
-          position: relative;
-        }
-        .center {
-          float: left;
-          margin: 0;
-        }
-        .right {
-          float: right;
-          position: relative;
-        }
-      }
-
-      a, a:visited, a:hover {
-        display: inline-block;
-        height: 2.6em;
-        line-height: 2.6em;
-        padding: 0 15px;
-        text-decoration: none;
-        color: white;
-        cursor: pointer;
-        .opacity(0.45);
-        margin: 0 0px;
-        font-size: 1em;
-        text-transform: uppercase;
-      }
-
-      a.active {
-        background-color: #1F1F1F;
-        color: #DC6347;
-        .opacity(1.0);
-      }
     }
-
-    footer {
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      width: 100%;
-
-      background-color: #262626;
-      height: 3.6em;
-      line-height: 3.6em;
-      font-family: Arial;
-
-      .right {
-        float: right;
-        margin-left: 0px;
-        margin-right: 15px;
-      }
-
-      a {
-        text-decoration: none;
-        color: white;
-        .opacity(0.23);
-        margin-left: 15px;
-      }
+    .center {
+      float: left;
+      margin: 0;
     }
-
-    .content {
-      margin: 0 auto 0 auto;
-      padding: 0px 0px 3.6em;
-      max-width: 960px;
-
-      p {
-        font-size: 1.6em;
-      }
-
-      h2 {
-        font-size: 3.3em;
-      }
-
-      h3 {
-        font-size: 2.5em;
-      }
-
-      h4 {
-        font-size: 2.0em;
-      }
-
-      h5 {
-        font-size: 1.5em;
-      }
-
-      a, a:visited, a:hover {
-        text-decoration: none;
-        color: #217473;
-        cursor: pointer;
-        &.button {
-          color: white; // TODO: this should belong to .base-button
-        }
-      }
+    .right {
+      float: right;
+      position: relative;
     }
+  }
+
+  a, a:visited, a:hover {
+    padding: 0 1.125em;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    .opacity(0.45);
+    margin: 0 0px;
+    text-transform: uppercase;
+  }
+
+  a.active {
+    background-color: #1F1F1F;
+    color: #DC6347;
+    .opacity(1.0);
+  }
+}
+
+.pq-content {
+  margin: 0 auto 0 auto;
+  padding: 0px 0px 3.6em;
+  max-width: 960px;
+
+  div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+  }
+
+  p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 2.333333333em; // 42px / 18px
+    line-height: 1.285714286em; // 27px * 2 / 42px
+    margin-top: 0.642857143em; // 27 / 42
+    margin-bottom: 0.642857143em;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 1.777777778em; // 32px / 18px
+    line-height: 1.6875em; // 27px * 2 / 32
+    margin-top: 0.84375em; // 27px / 32
+    margin-bottom: 0.84375em;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  h4 {
+    font-size: 22px;
+    line-height: 1.227272727em;
+    font-weight: 600;
+    margin-top: 1.227272727em;
+    margin-bottom: 1.227272727em;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.35em;
+    margin-top: 1.35em;
+    margin-bottom: 1.35em;
+  }
+
+  a, a:visited, a:hover {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color: #3a91a1;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 0;
+    }
+    &.button {
+      color: white; // TODO: this should belong to .base-button
+    }
+  }
+}
+
+.pq-footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #262626;
+  font-size: 0.6667em; // 12px / 18px
+  line-height: 4.5em; // 2 * basic line hight of 27px
+  font-family: Arial;
+
+  .right {
+    float: right;
+    margin-left: 0px;
+    margin-right: 1.5833em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    .opacity(0.23);
+    margin-left: 1.5833em;
+    cursor: pointer;
   }
 }
