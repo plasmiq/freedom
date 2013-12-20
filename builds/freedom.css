@@ -163,15 +163,15 @@ html.pq-freedom body > div {
 .pq-content h1 {
   font-weight: 600;
   font-size: 2.333333333em;
-  line-height: 1.285714286em;
-  margin-top: 0.642857143em;
+  line-height: 1em;
+  margin-top: 0.928571429em;
   margin-bottom: 0.642857143em;
 }
 .pq-content h2 {
   font-weight: 600;
   font-size: 1.777777778em;
-  line-height: 1.6875em;
-  margin-top: 0.84375em;
+  line-height: 1em;
+  margin-top: 1.53125em;
   margin-bottom: 0.84375em;
 }
 .pq-content h3 {
@@ -267,7 +267,7 @@ html.pq-freedom body > div {
   box-shadow: 0px 0.08em 0px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0.08em 0px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0.08em 0px 0px rgba(0, 0, 0, 0.3);
-  font-size: 9.5em;
+  font-size: 5.5em;
 }
 .pq-button-block .icon {
   -webkit-border-radius: 1em;
