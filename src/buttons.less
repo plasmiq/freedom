@@ -1,47 +1,49 @@
-.base-button () {
-  font-weight: 700;
-  background-color: black;
-  color: white;
-  padding: 0em 0.9em;
-  text-transform: uppercase;
-  line-height: 2em;
-  cursor: pointer;
-}
-
-.pq-button-inline {
-  .base-button();
-  .border-radius(5px);
-  .box-shadow(0px; 0.25em; 0px; 0px; @color-shadow);
-  display: inline-block;
-}
-
-.pq-content .pq-button-block {
-  .base-button();
-  .border-radius(12px);
-  .box-shadow(0px; 0.08em; 0px; 0px; @color-shadow);
-  font-size: 6em;
-
-  .icon {
-    .border-radius(1em);
-    float: right;
+.pq {
+  .base-button () {
+    font-weight: 700;
+    background-color: black;
     color: white;
-    background-color: white;
-    height: 1em;
-    width: 1em;
-    line-height: 1em;
-    margin: 0;
-    text-align: center;
+    padding: 0em 0.9em;
+    text-transform: uppercase;
+    line-height: 2em;
+    cursor: pointer;
+  }
+
+  &.pq-button-inline {
+    .base-button();
+    .border-radius(5px);
+    .box-shadow(0px; 0.25em; 0px; 0px; @color-shadow);
     display: inline-block;
-    margin-top: 0.4em;
-    padding: 0.1em;
-    font-weight: normal;
   }
 
-  &.pq-color-z .icon {
-    color: #007372;
-  }
+  &.pq-button-block {
+    .base-button();
+    .border-radius(12px);
+    .box-shadow(0px; 0.08em; 0px; 0px; @color-shadow);
+    font-size: 6em;
 
-  &.pq-color-y .icon {
-    color: #CF203F;
+    .icon {
+      .border-radius(1em);
+      float: right;
+      color: white;
+      background-color: white;
+      height: 1em;
+      width: 1em;
+      line-height: 1em;
+      margin: 0;
+      text-align: center;
+      display: inline-block;
+      margin-top: 0.4em;
+      padding: 0.1em;
+      font-weight: normal;
+    }
+
+    &.pq-color-z .icon {
+      color: #007372;
+    }
+
+    &.pq-color-y .icon {
+      color: #CF203F;
+    }
   }
 }
