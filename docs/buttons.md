@@ -10,11 +10,11 @@ Markup:
 
 Example 1:
 
-<div class="pq pq-button-block pq-color-z">must do<span class="icon"><i class="icon-ok"></i></span></div>
+<div class="pq pq-button-block pq-color-z">must do<span class="icon"><i class="fa fa-check"></i></span></div>
 
 Example 2:
 
-<div class="pq pq-button-block pq-color-y">don't do<span class="icon"><i class="icon-remove"></i></span></div>
+<div class="pq pq-button-block pq-color-y">don't do<span class="icon"><i class="fa fa-times"></i></span></div>
 
 ##Inline buttons
 
