@@ -34,6 +34,44 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4464', endColorstr='#E52B4B', GradientType=0);
   /* IE6-9 */
 }
+.pq.pq-nav-dropdown ul {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  margin: 0px;
+}
+.pq.pq-nav-dropdown ul li {
+  float: none;
+  position: relative;
+  border-bottom: 1px solid #585858;
+}
+.pq.pq-nav-dropdown ul li a {
+  color: #9C9C9C;
+  opacity: 1;
+  display: block;
+  width: 200px;
+  background-color: #2E2E2E;
+}
+.pq.pq-nav-dropdown ul li a i {
+  float: right;
+  line-height: inherit;
+}
+.pq.pq-nav-dropdown ul li a:hover {
+  background-color: #393939;
+}
+.pq.pq-nav-dropdown ul li:last-child {
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+}
+.pq.pq-nav-dropdown:hover > a {
+  opacity: 1;
+  background-color: #2E2E2E;
+  color: #dc6347;
+}
+.pq.pq-nav-dropdown:hover ul {
+  display: block;
+}
 /*
  * This construction guarantees that stick footer (.pq-footer) will work.
  */
@@ -178,22 +216,29 @@ html.pq-freedom body > div {
   font-weight: 600;
   font-size: 27px;
   line-height: 1em;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 .pq-content h4 {
-  font-size: 22px;
-  line-height: 1.227272727em;
   font-weight: 600;
-  margin-top: 1.227272727em;
+  font-size: 22px;
+  line-height: 1em;
+  margin-top: 2.459595959em;
   margin-bottom: 1.227272727em;
 }
 .pq-content h5 {
   font-weight: 600;
   font-size: 20px;
-  line-height: 1.35em;
-  margin-top: 1.35em;
+  line-height: 1em;
+  margin-top: 2.938888889em;
   margin-bottom: 1.35em;
+}
+.pq-content h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1em;
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
 }
 .pq-content a,
 .pq-content a:visited,
@@ -237,7 +282,7 @@ html.pq-freedom body > div {
   margin-left: 1.5833em;
   cursor: pointer;
 }
-.pq-button-inline {
+.pq.pq-button-inline {
   font-weight: 700;
   background-color: black;
   color: white;
@@ -253,7 +298,7 @@ html.pq-freedom body > div {
   -webkit-box-shadow: 0px 0.25em 0px 0px rgba(0, 0, 0, 0.3);
   display: inline-block;
 }
-.pq-content .pq-button-block {
+.pq.pq-button-block {
   font-weight: 700;
   background-color: black;
   color: white;
@@ -269,7 +314,7 @@ html.pq-freedom body > div {
   -webkit-box-shadow: 0px 0.08em 0px 0px rgba(0, 0, 0, 0.3);
   font-size: 6em;
 }
-.pq-content .pq-button-block .icon {
+.pq.pq-button-block .icon {
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
   border-radius: 1em;
@@ -286,10 +331,10 @@ html.pq-freedom body > div {
   padding: 0.1em;
   font-weight: normal;
 }
-.pq-content .pq-button-block.pq-color-z .icon {
+.pq.pq-button-block.pq-color-z .icon {
   color: #007372;
 }
-.pq-content .pq-button-block.pq-color-y .icon {
+.pq.pq-button-block.pq-color-y .icon {
   color: #CF203F;
 }
 .slider {
